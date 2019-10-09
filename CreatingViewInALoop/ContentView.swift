@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        Form {
+            ForEach(0 ..< 100) {
+                Text("Row \($0)")
+            }
+        }
     }
 }
 
